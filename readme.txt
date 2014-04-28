@@ -8,10 +8,11 @@ Stable tag: trunk
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Jomres is a hotel/villa booking system and portal for Joomla and Wordpress.
+
 
 == Description ==
 
+Jomres is a hotel/villa booking system and portal for Joomla and Wordpress.
 
 This [script](http://manual.jomres.net/installation.html?ms=AwAAAAAAAAAKIA==&mw=MjQw&st=MA==&sct=MA==) contains the bridging plugins required to run Jomres 8.1.0 in Wordpress.
 
