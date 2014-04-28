@@ -13,18 +13,16 @@ Jomres is a hotel/villa booking system and portal for Joomla and Wordpress.
 == Description ==
 
 
-=Intro=
-
 This [script](http://manual.jomres.net/installation.html?ms=AwAAAAAAAAAKIA==&mw=MjQw&st=MA==&sct=MA==) contains the bridging plugins required to run Jomres 8.1.0 in Wordpress.
 
 
 == Installation ==
 
-This plugin contains only the bridging software required to allow Jomres and Wordpress to work together. To comply with Wordpress plugin directory rules we are unable to include the web installation package, however you can download it for free from [our downloads page](www.jomres.net/files/jomres_booking_system_web_installer_for_wordpress.zip).
+This plugin contains only the bridging software required to allow Jomres and Wordpress to work together. To comply with Wordpress plugin directory rules we are unable to include the web installation package, however you can download it for free from [our downloads page](http://www.jomres.net/files/jomres_booking_system_web_installer_for_wordpress.zip).
 
 1. Unzip jomres_booking_system_web_installer_for_wordpress.zip
 2. Go to Plugins -> Add new and upload `jomres.zip`.
-3. If Jomres isn't yet installed you will see a message saying so and you'll be given a link to follow to download the [Jomres Wordpress Web Installer](www.jomres.net/files/jomres_booking_system_web_installer_for_wordpress.zip). You must install this as this installs the actual Jomres Core system.
+3. If Jomres isn't yet installed you will see a message saying so and you'll be given a link to follow to download the [Jomres Wordpress Web Installer](http://www.jomres.net/files/jomres_booking_system_web_installer_for_wordpress.zip). You must install this as this installs the actual Jomres Core system.
 4. Activate the Jomres Wordpress Web Installer through the 'Plugins' menu in WordPress. This will copy jomres_webinstall.php to the root of your Wordpress installation.
 5. Follow the [onscreen instructions](http://manual.jomres.net/step_1___web_installer__recommended_.html?ms=AwAAAAAAAAAKIA==&mw=MjQw&st=MA==&sct=MA==) to download Jomres and install it. Once Jomres has been installed please deactivate and delete the *Jomres Booking System Web Installer for Wordpress*.
 
