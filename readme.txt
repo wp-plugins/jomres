@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Jomres is a hotel/villa booking system and portal for Joomla and Wordpress.
 
-This [script](http://manual.jomres.net/installation.html?ms=AwAAAAAAAAAKIA==&mw=MjQw&st=MA==&sct=MA==) contains the bridging plugins required to run Jomres 8.1.0 in Wordpress.
+This plugin contains the bridging plugins required to run Jomres in Wordpress.
 
 
 == Installation ==
@@ -41,7 +41,7 @@ It has historically been written for use in the Joomla Content Management System
 
 
 
-=New in Jomres 8.1=
+= New in Jomres 8.1 =
 
 * **Wordpress integration** Run Jomres within Wordpress.
 * **Booking approvals** Approve/Reject bookings before taking payment online.
@@ -49,7 +49,7 @@ It has historically been written for use in the Joomla Content Management System
 * **Budget** Users are able to set a Budget option in the Property list pages, showing them properties that are within a given budget (the surrounding panel turns green). Bootstrapped templates only.
 
 
-=Features=
+= Features =
 
 Some extra [Jomres plugins](http://manual.jomres.net/core_plugins.html?ms=BQBAAAAAAAASQAg=&mw=MjQw&st=MA==&sct=MA==) may be needed to access all features.
 
@@ -73,7 +73,7 @@ Some extra [Jomres plugins](http://manual.jomres.net/core_plugins.html?ms=BQBAAA
 * **Booking Creation Kit** Jomres is a Booking System Creation Kit. Whilst it is designed to work "out of the box" with minimal configuration, it's real strength comes from the power and flexability of it's plugin functionality. Don't offer another cookie-cutter booking site, be creative and innovate, using Jomres as the foundation you can build upon.
 
 
-=Phoning home=
+= Phoning home =
 
 Note that the Jomres system has to phone home to perform certain actions, for example to find the current version of the system and current versions of plugins, download plugins (if you have a valid license to do so), get latest news etc. It also contacts remote services to find geo-location information, Google maps and currency conversion data. Installation of Jomres and use of it's functionality assumes that you agree that it does this. We don't collect data about you unless you install a Jomres plugin, and then only so that we can ensure that only authorised users can install said plugin.
 
@@ -112,6 +112,10 @@ Please visit the manual at [manual.jomres.net](http://manual.jomres.net), [more 
 = 1.0 =
 Initial release of this plugin.
 
+= 8.1.1 =
+
+Jomres 8.1.1 released to fix a bug in the miniComponent handler that resulted in incorrect paths.
+
 == Translations ==
 
 * Jomres includes 31 language files in varying states of translation as we rely on members to feed back their versions of the language files. It [includes a variety of methods for translation](http://manual.jomres.net/editing_labels___languages.html?ms=EQAACAAAAABCQEA=&mw=MjQw&st=MA==&sct=MA==) allowing you to have different labels for different property types, and even individual properties.
@@ -124,9 +128,6 @@ Initial release of this plugin.
 
 Note : Upgrades are best performed through the Jomres Updates menu option in the administrator area.
 For the full Jomres changelog please see http://www.jomres.net/support-mainmenu-209/changelog
-
-== Credits ==
-* Many thanks to [Aladar Barthi](http://www.jomres-extras.com/) for your support of Jomres users, and [Rodrigo Rocco](http://jomres-plugins.com) for your continuing efforts in supporting Jomres users on the forum!
 
 == Changelog link ==
 For the full Jomres changelog [please click here](http://www.jomres.net/support-mainmenu-209/changelog).
@@ -141,4 +142,6 @@ We recommend that the first thing you do is find a Bootstrap 2 or 3 Wordpress te
 
 This will ensure that your WP template and the Jomres templates play nicely together. The administrator area of Wordpress will still use the jQuery UI based templates, but the public facing pages will use Bootstrap.
 
+== Credits ==
+* Many thanks to [Aladar Barthi](http://www.jomres-extras.com/) for your support of Jomres users, and [Rodrigo Rocco](http://jomres-plugins.com) for your continuing efforts in supporting Jomres users on the forum!
 
