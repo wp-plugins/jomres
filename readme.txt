@@ -102,7 +102,7 @@ Yup, the [manual](http://manual.jomres.net/jomres_manual.html?ms=AQAAAAAAAAAC&mw
 
 = Where can I get support? =
 
-It depends. If you've got a download and support license you can raise a [ticket](http://tickets.jomres.net), if you don't then you can still join the Community Forum](http://www.jomres.net/jomres-forum).
+It depends. If you've got a download and support license you can raise a [ticket](http://tickets.jomres.net), if you don't then you can still join the [Community Forum](http://www.jomres.net/jomres-forum).
 
 = I want to dowload the web installer myself, where can I get it from? =
 
