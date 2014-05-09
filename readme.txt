@@ -126,6 +126,24 @@ Please visit the manual at [manual.jomres.net](http://manual.jomres.net), [more 
 
 == Changelog ==
 
+= 8.1.3 =
+
+Fix : Improved how installation on wordpress is detected.
+Change : Disabled asamodule report from showing on WP, due to how urls are generated the report doesn't make sense on WP installations.
+Change : Changed the extraservices warning from a danger to a warning level report in the installer.
+Change : Disabled/removed some old functionality that was designed for Jomres Standalone and is no longer applicable.
+
+= 8.1.2 =
+
+Change : Updated Polish lang files, thanks Patryk
+Change : German language file updated.
+Change : Improved a path problem caused by the latest fix.
+Change : Added ids to town, street and posted in edit and register property templates to aid geocoder listener.
+
+Fix : Fixed a missing image problem on Jquery ui bookingform.
+Fix : Corrected a path for editing room types, image path was incorrect after new 8.1 path changes.
+Fix : Updated the wp plugin files to fix a bug with new paths.
+
 = 8.1.1 =
 
 Jomres 8.1.1 released to fix a bug in the miniComponent handler that resulted in incorrect paths.

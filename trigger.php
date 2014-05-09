@@ -5,6 +5,8 @@ if (!defined('_JOMRES_INITCHECK'))
 
 define( '_JOMRES_INITCHECK_ADMIN', 1 );
 
+require_once (dirname(__FILE__).'/../../../jomres_root.php');
+
 if (!jomres_check_if_jomres_installed())
 	{
 	output_jomres_not_installed_message();
@@ -12,9 +14,6 @@ if (!jomres_check_if_jomres_installed())
 
 else
 	{
-	require_once (dirname(__FILE__).'/../../jomres_root.php');
-	require_once(dirname(__FILE__).'/../../'.JOMRES_ROOT_DIRECTORY.'/jomres.php');
-			
 	if (isset($_REQUEST['jr_wp_source']))
 		{
 		if ($_GET['jr_wp_source'] == "admin")
@@ -28,7 +27,7 @@ else
 		}
 	else
 		{
-		if (strpos($_SERVER['HTTP_REFERER'] ,"wp-admin") > 0 )
+		if (strpos($_SERVER['SCRIPT_FILENAME'] ,"wp-admin/admin.php") > 0 )
 			{
 			jr_wp_trigger_admin();
 			}
@@ -41,6 +40,7 @@ else
 	
 function jr_wp_trigger_frontend()
 	{
+
 	require_once( ABSPATH . JOMRES_ROOT_DIRECTORY.'/jomres.php' );
 	if ( (int)$_REQUEST['jrajax'] == 1 ) // If it's an ajax called, we need to die when Jomres has done it's stuff
 		{
@@ -66,8 +66,9 @@ function jr_wp_trigger_admin()
 
 function jomres_check_if_jomres_installed()
 	{
+	
 	$jomres_installed = false;
-	if ( defined ( JOMRES_ROOT_DIRECTORY ) && file_exists( ABSPATH . JOMRES_ROOT_DIRECTORY.'/jomres.php' ) )
+	if ( defined ( 'JOMRES_ROOT_DIRECTORY' ) && file_exists( ABSPATH . JOMRES_ROOT_DIRECTORY.'/jomres.php' ) )
 		{
 		$jomres_installed = true;
 		}
