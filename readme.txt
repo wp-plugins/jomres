@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Jomres is a hotel/villa booking system and portal for Joomla and Wordpress. Developed for over 9 years, it's Joomla favourite, and most powerful hotel and villa booking system, and is now available for integration into Wordpress sites.
+[Jomres](http://www.jomres.net) is a hotel/villa booking system and portal for Joomla and Wordpress. Developed for over 9 years, it's Joomla favourite, and most powerful hotel and villa booking system, and is now available for integration into Wordpress sites.
 
 This plugin contains the bridging plugins required to run Jomres in Wordpress.
 
