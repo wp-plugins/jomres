@@ -5,13 +5,13 @@ if (!defined('_JOMRES_INITCHECK'))
 
 define( '_JOMRES_INITCHECK_ADMIN', 1 );
 
-require_once (dirname(__FILE__).'/../../../jomres_root.php');
+if (jomres_check_if_jomres_installed())
+	require_once (dirname(__FILE__).'/../../../jomres_root.php');
 
 if (!jomres_check_if_jomres_installed())
 	{
 	output_jomres_not_installed_message();
 	}
-
 else
 	{
 	if (isset($_REQUEST['jr_wp_source']))
@@ -78,6 +78,6 @@ function jomres_check_if_jomres_installed()
 
 function output_jomres_not_installed_message()
 	{
-	echo '<br/><br/>Sorry, it doesn\'t look like Jomres Core is installed yet, currently only this bridging plugin is installed. Please visit the <a href="http://www.jomres.net/download" target="_blank">Jomres.net download page</a> to download the web installer that will download Jomres Core to your Wordpress installation.';
+	echo '<br/><br/>Sorry, it doesn\'t look like Jomres Core is installed yet, currently only this bridging plugin is installed. Please download <a href="http://www.jomres.net/files/jomres_booking_system_web_installer_for_wordpress.zip" target="_blank">the Wordpress web installer</a> and install and activate it. Once you activate it the web installer will guide you through the rest of the installation process.';
 	}
 
