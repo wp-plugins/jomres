@@ -128,7 +128,7 @@ Please visit the manual at [manual.jomres.net](http://manual.jomres.net), [more 
 
 = Jomres 8.1.20 27/02/2015
 
-<span class="label label-success">Feature</span> Booking cancelled emails added to manager modifyable templates. Contributed by Rod at Jomres Plugins, many thanks mate.
+Booking cancelled emails added to manager modifyable templates. Contributed by Rod at Jomres Plugins, many thanks mate.
 
 After previous version's changes to improve date handling, now we make proper use of the mindaysbeforearrival setting.
 
@@ -138,8 +138,8 @@ Changed the process payment url to NOSEF as one particular implementation was ca
 
 = Jomres 8.1.19 19/02/2015
 
-<span class="label label-success">Feature</span> New feature in list bookings and list properties, can now sort by last changed state.
-<span class="label label-success">Feature</span> New functionality to support a new Latest bookings since last active plugin for property managers
+New feature in list bookings and list properties, can now sort by last changed state.
+New functionality to support a new Latest bookings since last active plugin for property managers
 
 Moved Polish zloty notation to end of currency instead of beginning.
 Emptied cache before importing eu tax rates.
@@ -181,7 +181,7 @@ Added a variety of changes to fix some javascript issues that intermittently app
 
 = Jomres 8.1.18 04/12/2014
 
-<span class="label label-success">Feature</span> Added Multisite support to Jomres, first iteration that supports property sharing.
+Added Multisite support to Jomres, first iteration that supports property sharing.
 
 Updated galleria slideshow plugin to 1.4.2
 Updated Polish lang file, thanks Patryk.
@@ -233,7 +233,7 @@ Fixed an intermittent issue where bookings might not get inserted to the booking
 
 = Jomres 8.1.16 23/10/2014
 
-<span class="label label-success">Feature</span> Added a new column booking_language to contracts table so that confirmation emails can be sent to the guest in their own language.
+Added a new column booking_language to contracts table so that confirmation emails can be sent to the guest in their own language.
 
 Removed some unnecessary directory scanning that was in place to discover the location of Jomres. As this file is now created in the installer, the scanning is no longer necessary.
 Added new functionality that supports javascript required by the booking form classic rooms list modals.
@@ -258,7 +258,7 @@ Added a flag that prevents the contact us link from showing twice on a page inte
 
 = Jomres 8.1.15 09/10/2014
 
-<span class="label label-success">Feature</span> Added new functionality so that Jomres can discover minicomponents in /templates/jr_leohtian/html/com_jomres/subdir which allows us to deliver templates with Jomres customisations which are specific only to that template.
+Added new functionality so that Jomres can discover minicomponents in /templates/jr_leohtian/html/com_jomres/subdir which allows us to deliver templates with Jomres customisations which are specific only to that template.
 Added IP numbers to error logs.
 Added translation of guest types to basic_contract_details class.
 Re-added a salutation that was inadvertently removed, to language files.
@@ -335,7 +335,7 @@ Fixed a bug where un-published properties could show in the agent's page.
 
 = Jomres 8.1.10 01/09/2014
 
-<span class="label label-success">Feature</span> Added new functionality to allow site managers to choose whether or not to show the property list paginated, or to use the older Infinite Scrolling feature.
+Added new functionality to allow site managers to choose whether or not to show the property list paginated, or to use the older Infinite Scrolling feature.
 
 Modified the image uploader to automatically crop images.
 Added modules srch.html templates to files that can be overridden via the Joomla method.
@@ -365,7 +365,7 @@ Tweaked how chained combo boxes are built.
 
 = Jomres 8.1.9 07/08/2014
 
-<span class="label label-success">Feature</span> Added Japanese language file. Many thanks Jeff.
+Added Japanese language file. Many thanks Jeff.
 
 Improved icons in the BS3 media centre templates.
 Updated a version number in an xml file.
@@ -381,8 +381,8 @@ Tweaked how a disabled task's name is determined.
 
 = Jomres 8.1.8 31/07/2014
 
-<span class="label label-success">Feature</span> Refactored javascript and css file handling. Older method was growing to become clumsy, new process automatically creates consolidation scripts (where as many .js files as is practical are presented as one file) and .js and .css files are automatically minified. All new .js and .css files can be supplied un-minified, if the file is ever modifed the served, minified and/or consolidated version of that file is automatically updated.
-<span class="label label-success">Feature</span> Updated dump template vars functionality (Site Configuration -> Debugging). Instead of using older patTemplate dump function we now output the name of the individual template and on hover the variables available to the template are shown. It's not pretty, but it makes it very easy for site integrators to identify Jomres template files that they may wish to modify.
+Refactored javascript and css file handling. Older method was growing to become clumsy, new process automatically creates consolidation scripts (where as many .js files as is practical are presented as one file) and .js and .css files are automatically minified. All new .js and .css files can be supplied un-minified, if the file is ever modifed the served, minified and/or consolidated version of that file is automatically updated.
+Updated dump template vars functionality (Site Configuration -> Debugging). Instead of using older patTemplate dump function we now output the name of the individual template and on hover the variables available to the template are shown. It's not pretty, but it makes it very easy for site integrators to identify Jomres template files that they may wish to modify.
 
 Improved price overlay, added ability to switch it on and off, changed the output a little to use new strings and calculations based on how prices are stored.
 Improved new functionality related to finding the number of days in the property list search results.
@@ -409,9 +409,9 @@ Disadvantage : you cannot have different templates for different property types.
 
 = Jomres 8.1.7 13/06/2014
 
-<span class="label label-success">Feature</span> Added the calendar to the module popup contents.
-<span class="label label-success">Feature</span> Added ability to view the changelog in administrator -> developer tools. Reformatted the changelog so that we can start making use of BS labels to make it more readable.
-<span class="label label-success">Feature</span> Added a new image overlay tag to property list that shows the cumulative price calculated from the dates in ajax search's dates.
+Added the calendar to the module popup contents.
+Added ability to view the changelog in administrator -> developer tools. Reformatted the changelog so that we can start making use of BS labels to make it more readable.
+Added a new image overlay tag to property list that shows the cumulative price calculated from the dates in ajax search's dates.
 
 Prevent resources menu option from showing if is Jintour or real-estate property
 Changed how currency codes are pulled for listing against invoices.
@@ -442,7 +442,7 @@ Changed the name of an image.
 
 = Jomres 8.1.6 13/06/2014
 
-<span class="label label-success">Feature</span> Added ability to flag plugins as retired, to advise managers to uninstall older plugins that will not work with current versions of Jomres.
+Added ability to flag plugins as retired, to advise managers to uninstall older plugins that will not work with current versions of Jomres.
 
 integration.php updated with a small routine to try to determine which file has failed to call jomres_root.php, if JOMRES_ROOT_DIRECTORY isn't set.
 Added email_text to allowed fields for input filtering, and improved the allowed tags list to be a little more lenient.
