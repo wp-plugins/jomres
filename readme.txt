@@ -126,7 +126,7 @@ Please visit the manual at [manual.jomres.net](http://manual.jomres.net), [more 
 
 == Changelog ==
 
-= Jomres 8.1.20 27/02/2015 =
+= 8.1.20 =
 
 Booking cancelled emails added to manager modifyable templates. Contributed by Rod at Jomres Plugins, many thanks mate.
 
@@ -136,7 +136,7 @@ After previous version's changes to improve date handling, now we make proper us
 Modified new column adding code to not use "after" to resolve issues that users were having after installing a third party plugin that adds it's own column.
 Changed the process payment url to NOSEF as one particular implementation was causing incorrect redirects to gateways.
 
-= Jomres 8.1.19 19/02/2015  =
+= 8.1.19  =
 
 New feature in list bookings and list properties, can now sort by last changed state.
 New functionality to support a new Latest bookings since last active plugin for property managers
@@ -179,9 +179,9 @@ Tweaked the module popup class so that bookings are actually shown if the calend
 Fixed issue where buttons etc would be shown even for non-existant bookings.
 Added a variety of changes to fix some javascript issues that intermittently appear.
 
-= Jomres 8.1.18 04/12/2014 =
+= 8.1.18 =
 
-Added Multisite support to Jomres, first iteration that supports property sharing.
+Added Multisite support to Jomres, first iteration that supports property sharing (Joomla Multisites only I'm afraid).
 
 Updated galleria slideshow plugin to 1.4.2
 Updated Polish lang file, thanks Patryk.
@@ -210,7 +210,7 @@ BS3 solved a problem when filtering ajax tables.
 
 
 
-= Jomres 8.1.17 11/11/2014 =
+= 8.1.17 =
 
 Updated bootstrap 3 edit property pages so that features are laid out correctly.
 Added a note to invoice handler
@@ -231,7 +231,7 @@ Removed a no-longer needed css class from jomresHTML.class.php
 
 Fixed an intermittent issue where bookings might not get inserted to the booking data archive due to html tags.
 
-= Jomres 8.1.16 23/10/2014 =
+= 8.1.16 =
 
 Added a new column booking_language to contracts table so that confirmation emails can be sent to the guest in their own language.
 
@@ -256,25 +256,25 @@ Resolved an issue where slideshow div loads images before showing gallery.
 Added a flag that prevents the contact us link from showing twice on a page intermittently.
 
 
-= Jomres 8.1.15 09/10/2014 =
+= 8.1.15 =
 
 Added new functionality so that Jomres can discover minicomponents in /templates/jr_leohtian/html/com_jomres/subdir which allows us to deliver templates with Jomres customisations which are specific only to that template.
 Added IP numbers to error logs.
 Added translation of guest types to basic_contract_details class.
 Re-added a salutation that was inadvertently removed, to language files.
 
-= Jomres 8.1.14 01/10/2014 =
+= 8.1.14 =
 
 Fixed a bug where a manager could modify bookings that they aren't authorised to modify. Medium level security bug.
 
-= Jomres 8.1.13 30/09/2014 =
+= 8.1.13 =
 
 Added shortlist templates to list properties.
 Added custom properties fields snippet to list_properties.html
 
 Modified the generatedateinput function as it was creating several issues on non-search based forms that required dates to be entered.
 
-= Jomres 8.1.12 26/09/2014 =
+= 8.1.12 =
 
 Improved media centre icons
 Tweaked urls to gmaps to ensure that https is used.
@@ -296,7 +296,7 @@ Fixed an issue where carriage returns in output_price.html causes javascript err
 Fixed a faulty path to the calendar icon for non-BS3 installations.
 Resolved an issue where duplicate records could be created in the booking data archive.
 
-= Jomres 8.1.11 23/09/2014 =
+= 8.1.11 =
 
 Modified the dashboard to use language strings from Jomres lang files instead of strings coded into the javascript file to define month and day names.
 Modified system to provide language strings for table tools (flash buttons cannot yet be translated).
@@ -333,7 +333,7 @@ Fixed a bug that prevented stars from showing in property list.
 Fixed a bug where un-published properties could show in the agent's page.
 
 
-= Jomres 8.1.10 01/09/2014 =
+= 8.1.10 =
 
 Added new functionality to allow site managers to choose whether or not to show the property list paginated, or to use the older Infinite Scrolling feature.
 
@@ -363,7 +363,7 @@ Modified layout of module popup for bootstrap3.
 Tweaked how chained combo boxes are built.
 
 
-= Jomres 8.1.9 07/08/2014 =
+= 8.1.9 =
 
 Added Japanese language file. Many thanks Jeff.
 
@@ -379,7 +379,7 @@ Changed how files are read into the js and css cache classes.
 Tweaked how a disabled task's name is determined.
 
 
-= Jomres 8.1.8 31/07/2014 =
+= 8.1.8 =
 
 Refactored javascript and css file handling. Older method was growing to become clumsy, new process automatically creates consolidation scripts (where as many .js files as is practical are presented as one file) and .js and .css files are automatically minified. All new .js and .css files can be supplied un-minified, if the file is ever modifed the served, minified and/or consolidated version of that file is automatically updated.
 Updated dump template vars functionality (Site Configuration -> Debugging). Instead of using older patTemplate dump function we now output the name of the individual template and on hover the variables available to the template are shown. It's not pretty, but it makes it very easy for site integrators to identify Jomres template files that they may wish to modify.
@@ -407,7 +407,7 @@ Advantage : People who're familiar with Joomla template overrides can use their 
 Disadvantage : you cannot have different templates for different property types.
 
 
-= Jomres 8.1.7 13/06/2014 =
+= 8.1.7 =
 
 Added the calendar to the module popup contents.
 Added ability to view the changelog in administrator -> developer tools. Reformatted the changelog so that we can start making use of BS labels to make it more readable.
@@ -440,7 +440,7 @@ Changed the name of an image.
 <span class="label label-info">Wordpress</span> Resolved an issue with ajax based calls being unable to find a property uid due to the url structure.
 
 
-= Jomres 8.1.6 13/06/2014 =
+= 8.1.6 =
 
 Added ability to flag plugins as retired, to advise managers to uninstall older plugins that will not work with current versions of Jomres.
 
@@ -464,7 +464,7 @@ Fixed a bug where wrong users were getting emailed php errors.
 Updated how Jomres handle's custom fields in the booking form so that required fields are properly highlighted again.
 Modified the installer, added `secret_key_used` column to create contracts table.
 
-= Jomres 8.1.5 23/05/2014 =
+= 8.1.5 =
 
 Added a new 99994 trigger point at the end of jomres.php's run. 
 Added new 99994 trigger to jomresRedirect function to ensure that 99994 actions are performed both when Jomres finishes running jomres.php, and when calls are redirected to another task.
@@ -480,7 +480,7 @@ Fixed an issue where the Product Tour (inline help feature) caused a javascript 
 <span class="label label-info">Wordpress</span> Tweaked the WP cms specific urls functionality to enable Jomres to work on WP sites that have permalinks enabled. This doesn't provide pretty urls, but it does fix an issue where Jomres wouldn't work on sites with permalinks switched on.
 <span class="label label-info">Wordpress</span> Improved how WP specific functionality detects if we're in admin area or not. Fixes an issue where admin media centre doesn't know where it is and results in a "something seriously wrong" message.
 
-= Jomres 8.1.4 12/05/2014 =
+= 8.1.4 =
 
 Added an is_child flag to the customer types table.
 
