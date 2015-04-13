@@ -5,13 +5,13 @@ if (!defined('_JOMRES_INITCHECK'))
 
 define( '_JOMRES_INITCHECK_ADMIN', 1 );
 
-if (jomres_check_if_jomres_installed())
-	require_once (dirname(__FILE__).'/../../../jomres_root.php');
+require_once (dirname(__FILE__).'/../../../jomres_root.php');
 
 if (!jomres_check_if_jomres_installed())
 	{
 	output_jomres_not_installed_message();
 	}
+
 else
 	{
 	if (isset($_REQUEST['jr_wp_source']))
@@ -78,6 +78,23 @@ function jomres_check_if_jomres_installed()
 
 function output_jomres_not_installed_message()
 	{
-	echo '<br/><br/>Sorry, it doesn\'t look like Jomres Core is installed yet, currently only this bridging plugin is installed. Please download <a href="http://www.jomres.net/files/jomres_booking_system_web_installer_for_wordpress.zip" target="_blank">the Wordpress web installer</a> and install and activate it. Once you activate it the web installer will guide you through the rest of the installation process.';
-	}
+	$dir_path = dirname(__FILE__) ;
 
+	copy(
+		$dir_path.'/jomres_webinstall.php' , 
+		ABSPATH.'/jomres_webinstall.php'
+		);
+	
+	unlink($dir_path.'/jomres_webinstall.php');
+
+	if (!file_exists(ABSPATH.'/jomres_webinstall.php') )
+		{
+		echo 'Error, couldn\'t copy '.$dir_path.'/jomres_webinstall.php to '.ABSPATH.'/jomres_webinstall.php <br/>';
+		echo 'Please use ftp to copy the file to '.ABSPATH.' then run it manually.';
+		}
+	else
+		{
+		wp_redirect(site_url()."/jomres_webinstall.php");
+		}
+	
+	}
