@@ -5,7 +5,7 @@ if (!defined('_JOMRES_INITCHECK'))
 
 define( '_JOMRES_INITCHECK_ADMIN', 1 );
 
-require_once (dirname(__FILE__).'/../../../jomres_root.php');
+
 
 if (!jomres_check_if_jomres_installed())
 	{
@@ -14,6 +14,7 @@ if (!jomres_check_if_jomres_installed())
 
 else
 	{
+	require_once (dirname(__FILE__).'/../../../jomres_root.php');
 	if (isset($_REQUEST['jr_wp_source']))
 		{
 		if ($_GET['jr_wp_source'] == "admin")
